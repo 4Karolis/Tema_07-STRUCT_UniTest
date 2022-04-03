@@ -94,7 +94,12 @@ namespace Tema_07_STRUCT_UniTest
                 Console.WriteLine(item);
             }
 
-
+            Studentas studentas4 = new Studentas(4, true)
+            //List<ColumnData> DataItems = new List<ColumnData>();
+            List<Studentas> DataItems = new List<Studentas>(1);
+            int cd = new Studentas();
+            cd.ID = "Taco";
+            DataItems.Add(cd);
 
             //----------------------------------------------- 5 UZDUOTIS ---------------------------------------
 
