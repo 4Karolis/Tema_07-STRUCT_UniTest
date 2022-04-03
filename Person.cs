@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Tema_08___Struckts___UnitTests
+namespace Tema_07_STRUCT_UniTest
 {
     struct Person
     {

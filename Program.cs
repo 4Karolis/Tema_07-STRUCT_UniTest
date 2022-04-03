@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Tema_08___Struckts___UnitTests
+namespace Tema_07_STRUCT_UniTest
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -51,7 +51,7 @@ namespace Tema_08___Struckts___UnitTests
             #endregion
 
         }
-        public static decimal CalculatorTax(decimal income)
+        public static decimal CalculateTax(decimal income)
         {
             decimal result = 0;
             if (income <= 40000)
