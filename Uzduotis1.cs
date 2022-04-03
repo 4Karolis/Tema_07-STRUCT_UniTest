@@ -10,7 +10,7 @@ namespace Tema_08___Struckts___UnitTests
         public int Trimestras2;
         public int Trimestras3;
 
-        public Uzduotis1(int trimestras1, int trimestras2, int trimestras3)//, int vidurkis)
+        public Uzduotis1(int trimestras1, int trimestras2, int trimestras3)
         {
             Trimestras1 = trimestras1;
             Trimestras2 = trimestras2;
