@@ -36,9 +36,11 @@ namespace Tema_08___Struckts___UnitTests
             uzduotis1.Trimestras1 = 8;
             uzduotis1.Trimestras2 = 10;
             uzduotis1.Trimestras3 = 6;
-            uzduotis1.Vidurkis = (Trimestras1 + Trimestras2 + Trimestras3) / 3) ;
-            uzduotis1.IsveskVidurki();
-            int vidurkis = MetinisVidurkis();
+            int vidurkis = uzduotis1.MetinisVidurkis();
+
+            //SU konstruktorium
+            Uzduotis1 uzduotis1Ctor = new Uzduotis1(8, 10, 6);
+            uzduotis1Ctor.MetinisVidurkis();
 
             #endregion
 
