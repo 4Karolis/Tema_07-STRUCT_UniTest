@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Tema_07_STRUCT_UniTest
 {
@@ -60,16 +61,38 @@ namespace Tema_07_STRUCT_UniTest
 
             //----------------------------------------------- 3 UZDUOTIS ---------------------------------------
 
-            Staciakampis staciakampis1 = new Staciakampis();
-            staciakampis1.Plotas(11, 25);
+            //Staciakampis staciakampis1 = new Staciakampis();
+            //staciakampis1.Plotas(11, 25);
 
-            Staciakampis staciakampis2 = new Staciakampis();
-            staciakampis1.Plotas(140, 69);
+            //Staciakampis staciakampis2 = new Staciakampis();
+            //staciakampis1.Plotas(140, 69);
 
-            Staciakampis staciakampis3 = new Staciakampis();
-            staciakampis1.Plotas(10, 3);
+            //Staciakampis staciakampis3 = new Staciakampis();
+            //staciakampis1.Plotas(10, 3);
 
             //----------------------------------------------- 4 UZDUOTIS ---------------------------------------
+
+            //List<int> IDList = new List<int>();
+            //List<bool> IskaitosRezultatai = new List<bool>();
+            List<Studentas> StudentList = new List<Studentas>();
+
+            Studentas studentas1 = new Studentas(1, true);
+            //studentas1.GetStudentID();
+            //studentas1.GetBool();
+
+            Studentas studentas2 = new Studentas(2, false);
+            //studentas1.GetStudentID();
+            //studentas1.GetBool();
+            Studentas studentas3 = new Studentas(3, false);
+
+            StudentList.Add(studentas1);
+            StudentList.Add(studentas2);
+            StudentList.Add(studentas3);
+
+            foreach (var item in StudentList)
+            {
+                Console.WriteLine(item);
+            }
 
 
 
