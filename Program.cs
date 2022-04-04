@@ -61,14 +61,14 @@ namespace Tema_07_STRUCT_UniTest
 
             //----------------------------------------------- 3 UZDUOTIS ---------------------------------------
 
-            //Staciakampis staciakampis1 = new Staciakampis();
-            //staciakampis1.Plotas(11, 25);
+            Staciakampis staciakampis1 = new Staciakampis(10, 5);
+            staciakampis1.Plotas();
 
-            //Staciakampis staciakampis2 = new Staciakampis();
-            //staciakampis1.Plotas(140, 69);
+            Staciakampis staciakampis2 = new Staciakampis(140, 69);
+            staciakampis2.Plotas();
 
-            //Staciakampis staciakampis3 = new Staciakampis();
-            //staciakampis1.Plotas(10, 3);
+            Staciakampis staciakampis3 = new Staciakampis(10, 3);
+            staciakampis3.Plotas();
 
             //----------------------------------------------- 4 UZDUOTIS ---------------------------------------
 

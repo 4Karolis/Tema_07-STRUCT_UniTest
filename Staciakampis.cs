@@ -15,10 +15,10 @@ namespace Tema_07_STRUCT_UniTest
             Plotis = plotis;
         }
 
-        public void Plotas(double ilgis, double plotis)
+        public void Plotas()
         {
-            double plotas = ilgis * plotis;
-            Console.WriteLine($"\nStaciakampio ilgis {ilgis}, plotis {plotis} \nPLOTAS: {plotas}");
+            double plotas = Ilgis * Plotis;
+            Console.WriteLine($"\nStaciakampio ilgis {Ilgis}, plotis {Plotis} \nPLOTAS: {plotas}");
         }
     }
 }
