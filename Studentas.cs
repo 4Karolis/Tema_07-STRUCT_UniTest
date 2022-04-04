@@ -27,17 +27,17 @@ namespace Tema_07_STRUCT_UniTest
         //{
         //    return IskaitosRezultatas;
         //}
-        public struct ColumnData
-        {
-            public int ID;
-            public bool Blevyzga;
+        //public struct ColumnData
+        //{
+        //    public int ID;
+        //    public bool Blevyzga;
 
-            public ColumnData(int iD, bool blevyzga)
-            {
-                ID = iD;
-                Blevyzga = blevyzga;
-            }
-        }
+        //    public ColumnData(int iD, bool blevyzga)
+        //    {
+        //        ID = iD;
+        //        Blevyzga = blevyzga;
+        //    }
+        //}
 
     }
 }

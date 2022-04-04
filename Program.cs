@@ -56,50 +56,44 @@ namespace Tema_07_STRUCT_UniTest
 
             //----------------------------------------------- 2 UZDUOTIS ---------------------------------------
 
-            //BibliotekosKnyga bibliotekosKnyga = new BibliotekosKnyga(01, "Mobis Dikas", "Karlosas", "2022.01.25");
-            //bibliotekosKnyga.BibliotekosPrograma(kiekDienu);
+            BibliotekosKnyga bibliotekosKnyga = new BibliotekosKnyga(01, "Mobis Dikas", "Karlosas", "2022.01.25", 75);
+            bibliotekosKnyga.BibliotekosPrograma();
 
             //----------------------------------------------- 3 UZDUOTIS ---------------------------------------
 
-            Staciakampis staciakampis1 = new Staciakampis(10, 5);
-            staciakampis1.Plotas();
+            //Staciakampis staciakampis1 = new Staciakampis(10, 5);
+            //staciakampis1.Plotas();
 
-            Staciakampis staciakampis2 = new Staciakampis(140, 69);
-            staciakampis2.Plotas();
+            //Staciakampis staciakampis2 = new Staciakampis(140, 69);
+            //staciakampis2.Plotas();
 
-            Staciakampis staciakampis3 = new Staciakampis(10, 3);
-            staciakampis3.Plotas();
+            //Staciakampis staciakampis3 = new Staciakampis(10, 3);
+            //staciakampis3.Plotas();
 
             //----------------------------------------------- 4 UZDUOTIS ---------------------------------------
 
-            //List<int> IDList = new List<int>();
-            //List<bool> IskaitosRezultatai = new List<bool>();
-            List<Studentas> StudentList = new List<Studentas>();
+            //List<Studentas> StudentList = new List<Studentas>();
 
-            Studentas studentas1 = new Studentas(1, true);
-            //studentas1.GetStudentID();
-            //studentas1.GetBool();
+            //Studentas studentas1 = new Studentas(1, true);           
+            //Studentas studentas2 = new Studentas(2, false);            
+            //Studentas studentas3 = new Studentas(3, false);
 
-            Studentas studentas2 = new Studentas(2, false);
-            //studentas1.GetStudentID();
-            //studentas1.GetBool();
-            Studentas studentas3 = new Studentas(3, false);
+            //StudentList.Add(studentas1);
+            //StudentList.Add(studentas2);
+            //StudentList.Add(studentas3);
 
-            StudentList.Add(studentas1);
-            StudentList.Add(studentas2);
-            StudentList.Add(studentas3);
+            //for (int i = 0; i < StudentList.Count; i++)
+            //{
+            //    Console.WriteLine($"\n{StudentList[i].ID}");
+            //    Console.WriteLine(StudentList[i].IskaitosRezultatas);
+            //}
 
-            foreach (var item in StudentList)
-            {
-                Console.WriteLine(item);
-            }
-
-            Studentas studentas4 = new Studentas(4, true)
-            //List<ColumnData> DataItems = new List<ColumnData>();
-            List<Studentas> DataItems = new List<Studentas>(1);
-            int cd = new Studentas();
-            cd.ID = "Taco";
-            DataItems.Add(cd);
+            //////SAME tik su FOREACH
+            ////foreach (var item in StudentList)
+            ////{
+            ////    Console.WriteLine($"\n{item.ID}");
+            ////    Console.WriteLine(item.IskaitosRezultatas);
+            ////}            
 
             //----------------------------------------------- 5 UZDUOTIS ---------------------------------------
 
