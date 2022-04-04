@@ -56,8 +56,8 @@ namespace Tema_07_STRUCT_UniTest
 
             //----------------------------------------------- 2 UZDUOTIS ---------------------------------------
 
-            BibliotekosKnyga bibliotekosKnyga = new BibliotekosKnyga(01, "Mobis Dikas", "Karlosas", "2022.01.25", 75);
-            bibliotekosKnyga.BibliotekosPrograma();
+            //BibliotekosKnyga bibliotekosKnyga = new BibliotekosKnyga(01, "Mobis Dikas", "Karlosas", "2022.01.25", 75);
+            //bibliotekosKnyga.BibliotekosPrograma();
 
             //----------------------------------------------- 3 UZDUOTIS ---------------------------------------
 
