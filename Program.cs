@@ -72,37 +72,45 @@ namespace Tema_07_STRUCT_UniTest
 
             //----------------------------------------------- 4 UZDUOTIS ---------------------------------------
 
-            List<Studentas> StudentList = new List<Studentas>();
+            //List<Studentas> StudentList = new List<Studentas>();
 
-            Studentas studentas1 = new Studentas(1, true);
-            Studentas studentas2 = new Studentas(2, false);
-            Studentas studentas3 = new Studentas(3, false);
-            Studentas studentas4 = new Studentas(4, true);
-            Studentas studentas5 = new Studentas(5, false);
+            //Studentas studentas1 = new Studentas(1, true);
+            //Studentas studentas2 = new Studentas(2, false);
+            //Studentas studentas3 = new Studentas(3, false);
+            //Studentas studentas4 = new Studentas(4, true);
+            //Studentas studentas5 = new Studentas(5, false);
 
-            StudentList.Add(studentas1);
-            StudentList.Add(studentas2);
-            StudentList.Add(studentas3);
-            StudentList.Add(studentas4);
-            StudentList.Add(studentas5);
+            //StudentList.Add(studentas1);
+            //StudentList.Add(studentas2);
+            //StudentList.Add(studentas3);
+            //StudentList.Add(studentas4);
+            //StudentList.Add(studentas5);
 
-            for (int i = 0; i < StudentList.Count; i++)
-            {
-                Console.WriteLine($"\n{StudentList[i].ID}");
-                Console.WriteLine(StudentList[i].IskaitosRezultatas);
-            }
-
-            ////SAME tik su FOREACH
-            //foreach (var item in StudentList)
+            //for (int i = 0; i < StudentList.Count; i++)
             //{
-            //    Console.WriteLine($"\n{item.ID}");
-            //    Console.WriteLine(item.IskaitosRezultatas);
-            //}            
+            //    Console.WriteLine($"\n{StudentList[i].ID}");
+            //    Console.WriteLine(StudentList[i].IskaitosRezultatas);
+            //}
+
+            //////SAME tik su FOREACH
+            ////foreach (var item in StudentList)
+            ////{
+            ////    Console.WriteLine($"\n{item.ID}");
+            ////    Console.WriteLine(item.IskaitosRezultatas);
+            ////}            
 
             //----------------------------------------------- 5 UZDUOTIS ---------------------------------------
 
+            List<double> pazymiai1 = new List<double> { 4, 7, 6, 9, 10, 8, 5 };
+            List<double> pazymiai2 = new List<double> { 10, 9, 7, 6, 8, 10, 7 };
+            List<double> pazymiai3 = new List<double> { 3, 5, 7, 4, 6, 8, 5, 6 };
 
-
+            Studentass studentass = new Studentass(pazymiai1, pazymiai2, pazymiai3);
+            double semestroVidurkis1 = studentass.SemestroVidurkis1(pazymiai1);
+            double semestroVidurkis2 = studentass.SemestroVidurkis1(pazymiai2);
+            double semestroVidurkis3 = studentass.SemestroVidurkis1(pazymiai3);
+            studentass.MetinisVidurkis(semestroVidurkis1, semestroVidurkis2, semestroVidurkis3);
+            
             //----------------------------------------------- 6 UZDUOTIS ---------------------------------------
 
 
@@ -111,8 +119,8 @@ namespace Tema_07_STRUCT_UniTest
 
 
         }
-        //=============================================================
-        public static decimal CalculateTax(decimal income)
+    //=============================================================
+    public static decimal CalculateTax(decimal income)
         {
             decimal result = 0;
             if (income <= 40000)
