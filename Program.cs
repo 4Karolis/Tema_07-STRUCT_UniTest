@@ -72,28 +72,32 @@ namespace Tema_07_STRUCT_UniTest
 
             //----------------------------------------------- 4 UZDUOTIS ---------------------------------------
 
-            //List<Studentas> StudentList = new List<Studentas>();
+            List<Studentas> StudentList = new List<Studentas>();
 
-            //Studentas studentas1 = new Studentas(1, true);           
-            //Studentas studentas2 = new Studentas(2, false);            
-            //Studentas studentas3 = new Studentas(3, false);
+            Studentas studentas1 = new Studentas(1, true);
+            Studentas studentas2 = new Studentas(2, false);
+            Studentas studentas3 = new Studentas(3, false);
+            Studentas studentas4 = new Studentas(4, true);
+            Studentas studentas5 = new Studentas(5, false);
 
-            //StudentList.Add(studentas1);
-            //StudentList.Add(studentas2);
-            //StudentList.Add(studentas3);
+            StudentList.Add(studentas1);
+            StudentList.Add(studentas2);
+            StudentList.Add(studentas3);
+            StudentList.Add(studentas4);
+            StudentList.Add(studentas5);
 
-            //for (int i = 0; i < StudentList.Count; i++)
+            for (int i = 0; i < StudentList.Count; i++)
+            {
+                Console.WriteLine($"\n{StudentList[i].ID}");
+                Console.WriteLine(StudentList[i].IskaitosRezultatas);
+            }
+
+            ////SAME tik su FOREACH
+            //foreach (var item in StudentList)
             //{
-            //    Console.WriteLine($"\n{StudentList[i].ID}");
-            //    Console.WriteLine(StudentList[i].IskaitosRezultatas);
-            //}
-
-            //////SAME tik su FOREACH
-            ////foreach (var item in StudentList)
-            ////{
-            ////    Console.WriteLine($"\n{item.ID}");
-            ////    Console.WriteLine(item.IskaitosRezultatas);
-            ////}            
+            //    Console.WriteLine($"\n{item.ID}");
+            //    Console.WriteLine(item.IskaitosRezultatas);
+            //}            
 
             //----------------------------------------------- 5 UZDUOTIS ---------------------------------------
 
