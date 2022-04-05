@@ -101,19 +101,31 @@ namespace Tema_07_STRUCT_UniTest
 
             //----------------------------------------------- 5 UZDUOTIS ---------------------------------------
 
-            List<double> pazymiai1 = new List<double> { 4, 7, 6, 9, 10, 8, 5 };
-            List<double> pazymiai2 = new List<double> { 10, 9, 7, 6, 8, 10, 7 };
-            List<double> pazymiai3 = new List<double> { 3, 5, 7, 4, 6, 8, 5, 6 };
+            //List<double> pazymiai1 = new List<double> { 4, 7, 6, 9, 10, 8, 5 };
+            //List<double> pazymiai2 = new List<double> { 10, 9, 7, 6, 8, 10, 7 };
+            //List<double> pazymiai3 = new List<double> { 3, 5, 7, 4, 6, 8, 5, 6 };
 
-            Studentass studentass = new Studentass(pazymiai1, pazymiai2, pazymiai3);
-            double semestroVidurkis1 = studentass.SemestroVidurkis1(pazymiai1);
-            double semestroVidurkis2 = studentass.SemestroVidurkis1(pazymiai2);
-            double semestroVidurkis3 = studentass.SemestroVidurkis1(pazymiai3);
-            studentass.MetinisVidurkis(semestroVidurkis1, semestroVidurkis2, semestroVidurkis3);
-            
+            //Studentass studentass = new Studentass(pazymiai1, pazymiai2, pazymiai3);
+            //double semestroVidurkis1 = studentass.SemestroVidurkis1(pazymiai1);
+            //double semestroVidurkis2 = studentass.SemestroVidurkis1(pazymiai2);
+            //double semestroVidurkis3 = studentass.SemestroVidurkis1(pazymiai3);
+            //studentass.MetinisVidurkis(semestroVidurkis1, semestroVidurkis2, semestroVidurkis3);
+
             //----------------------------------------------- 6 UZDUOTIS ---------------------------------------
 
-
+            //List<Rinkejai> Rinkejai = new List<Rinkejai>();
+            //var random = new Random();
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    Rinkejai.Add(new Rinkejai(random.Next(1, 10), random.Next(2) == 0));
+            //}
+            //Console.WriteLine("|           Rinkejo ID:        -             Ar prabalsavo?    |");
+            //Console.WriteLine("|==============================================================|");
+            //foreach (var item in Rinkejai)
+            //{
+            //    Console.WriteLine($"|               {item.ID}              -                {item.ArPrabalsavo}           |");
+            //}
+            //Console.WriteLine("|==============================================================|");
 
             //----------------------------------------------- 7 UZDUOTIS ---------------------------------------
 
