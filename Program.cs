@@ -129,10 +129,68 @@ namespace Tema_07_STRUCT_UniTest
 
             //----------------------------------------------- 7 UZDUOTIS ---------------------------------------
 
+            Gyvunas gyvunas1 = new Gyvunas("Oposumas", "Zinduolis");
+            Gyvunas gyvunas2 = new Gyvunas("Keune", "Zinduolis");
+            Gyvunas gyvunas3 = new Gyvunas("Pleksne", "Zuvis");
+            Gyvunas gyvunas4 = new Gyvunas("Peleda", "Paukstis");
+            Gyvunas gyvunas5 = new Gyvunas("Pingvinas", "Paukstis");
+            Gyvunas gyvunas6 = new Gyvunas("Zebenkstis", "Zinduolis");
+            Gyvunas gyvunas7 = new Gyvunas("Krokodilas", "Reptilija");
 
+            int randomNumber = GenerateRandomNumber();
+            
+            List<Gyvunas> gyvunuSarasas = new List<Gyvunas> {gyvunas1, gyvunas2, gyvunas3, gyvunas4, gyvunas5, gyvunas6, gyvunas7};
+
+            for (int i = 0; i < 7; i++)
+            {
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas1);
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas2);
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas3);
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas4);
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas5);
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas6);
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas7);
+            }
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas1);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas2);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas3);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas4);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas5);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas6);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas7);
+
+            PrintOutGyvunaiSarasas(gyvunuSarasas);
+            int kiekYraGyvunu = gyvunuSarasas.Count;
+            Console.WriteLine(kiekYraGyvunu);
+            //RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas1);
         }
-    //=============================================================
-    public static decimal CalculateTax(decimal income)
+        //=============================================================
+        public static void RandomlyFillList(List<Gyvunas> GyvunuSarasas, int randomNumber, Gyvunas gyvunas)
+        {
+            randomNumber = GenerateRandomNumber();
+            AddRandomGyvunas(randomNumber, GyvunuSarasas, gyvunas);
+        }
+        public static void PrintOutGyvunaiSarasas(List<Gyvunas> GyvunuSarasas)
+        {
+            foreach (var item in GyvunuSarasas)
+            {
+                Console.WriteLine($"{item.Vardas} {item.Rusis}");
+            }
+        }
+        public static void AddRandomGyvunas(int randomNumber, List<Gyvunas> ListName, Gyvunas gyvunas)
+        {
+            for (int i = 0; i < randomNumber; i++)
+            {
+                ListName.Add(gyvunas);
+            }
+        }
+        public static int GenerateRandomNumber()
+        {
+            Random rnd = new Random();            
+            int randomSkaicius = rnd.Next(15);              
+            return randomSkaicius;
+        }
+        public static decimal CalculateTax(decimal income)
         {
             decimal result = 0;
             if (income <= 40000)
