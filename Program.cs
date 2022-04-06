@@ -129,56 +129,99 @@ namespace Tema_07_STRUCT_UniTest
 
             //----------------------------------------------- 7 UZDUOTIS ---------------------------------------
 
-            Gyvunas gyvunas1 = new Gyvunas("Oposumas", "Zinduolis");
-            Gyvunas gyvunas2 = new Gyvunas("Keune", "Zinduolis");
-            Gyvunas gyvunas3 = new Gyvunas("Pleksne", "Zuvis");
-            Gyvunas gyvunas4 = new Gyvunas("Peleda", "Paukstis");
-            Gyvunas gyvunas5 = new Gyvunas("Pingvinas", "Paukstis");
-            Gyvunas gyvunas6 = new Gyvunas("Zebenkstis", "Zinduolis");
-            Gyvunas gyvunas7 = new Gyvunas("Krokodilas", "Reptilija");
+            //Gyvunas gyvunas1 = new Gyvunas("Oposumas", "Zinduolis");
+            //Gyvunas gyvunas2 = new Gyvunas("Keune", "Zinduolis");
+            //Gyvunas gyvunas3 = new Gyvunas("Pleksne", "Zuvis");
+            //Gyvunas gyvunas4 = new Gyvunas("Peleda", "Paukstis");
+            //Gyvunas gyvunas5 = new Gyvunas("Pingvinas", "Paukstis");
+            //Gyvunas gyvunas6 = new Gyvunas("Zebenkstis", "Zinduolis");
+            //Gyvunas gyvunas7 = new Gyvunas("Krokodilas", "Reptilija");
 
-            int randomNumber = GenerateRandomNumber();
+            //int randomNumber = GenerateRandomNumber();
 
-            //RANDOM FILL
-            List<Gyvunas> gyvunuSarasas = new List<Gyvunas> {gyvunas1, gyvunas2, gyvunas3, gyvunas4, gyvunas5, gyvunas6, gyvunas7};
+            ////RANDOM FILL
+            //List<Gyvunas> gyvunuSarasas = new List<Gyvunas> {gyvunas1, gyvunas2, gyvunas3, gyvunas4, gyvunas5, gyvunas6, gyvunas7};
 
-            for (int i = 0; i < 5; i++)// buvo 7
-            {
-                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas1);
-                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas2);
-                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas3);
-                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas4);
-                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas5);
-                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas6);
-                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas7);
-            }
+            //for (int i = 0; i < 5; i++)// buvo 7
+            //{
+            //    RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas1);
+            //    RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas2);
+            //    RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas3);
+            //    RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas4);
+            //    RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas5);
+            //    RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas6);
+            //    RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas7);
+            //}
 
-            PrintOutGyvunaiSarasas(gyvunuSarasas);
-            int kiekYraGyvunu = gyvunuSarasas.Count;
-            Console.WriteLine(kiekYraGyvunu);
+            //PrintOutGyvunaiSarasas(gyvunuSarasas);
+            //int kiekYraGyvunu = gyvunuSarasas.Count;
+            //Console.WriteLine(kiekYraGyvunu);
 
-            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas1);
-            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas2);
-            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas3);
-            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas4);
-            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas5);
-            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas6);
-            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas7);
+            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas1);
+            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas2);
+            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas3);
+            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas4);
+            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas5);
+            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas6);
+            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas7);
 
-            //ZoologijosSodas zoologijos = new ZoologijosSodas("Vilnius Zoo", "Ozo g. 25", gyvunuSarasas);
+            ////ZoologijosSodas zoologijos = new ZoologijosSodas("Vilnius Zoo", "Ozo g. 25", gyvunuSarasas);
 
-            //zoologijos.SkaiciuotiGyvunus();
-
-
+            ////zoologijos.SkaiciuotiGyvunus();
 
 
-            //List<Gyvunas> gyvunas = SkaiciuotiGyvunus(gyvunuSarasas);
 
 
-            //RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas1);
-            //string skaiciuoti = SkaiciuotiGyvunus();
+            ////List<Gyvunas> gyvunas = SkaiciuotiGyvunus(gyvunuSarasas);
+
+
+            ////RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas1);
+            ////string skaiciuoti = SkaiciuotiGyvunus();
+
+
+
+            //---------- 1. pridet UnitTest'us
+
+            //X
+
+            //---------- 2. Apvestras String'as
+
+            //Console.WriteLine("Iveskite bet ka: ");
+            //string input = Console.ReadLine();
+
+            //string apvestasTekstas = StringoApvertimas(input);
+            //Console.WriteLine("Po apvertimo: ");
+            //Console.WriteLine(apvestasTekstas);
+
+            //---------- 3. Metodas gauna int parametra, grazina lyginis = true, nelyginis = flase
+
+            ArLyginis();
+
         }
+
         //=============================================================
+        public static void ArLyginis()
+        {
+            Console.WriteLine("Iveskite skaiciu: ");
+            int inputas = int.Parse(Console.ReadLine());
+
+            bool arLyginis = inputas % 2 == 0;
+            Console.WriteLine("\nJusu ivestas skaicius yra lyginis?");
+            if (arLyginis)
+            {
+                Console.WriteLine(arLyginis);
+            }
+            else
+            {
+                Console.WriteLine(arLyginis);
+            }            
+        }
+        public static string StringoApvertimas(string pavadinimas)
+        {
+            char[] stringoCharai = pavadinimas.ToCharArray();
+            Array.Reverse(stringoCharai);
+            return new string(stringoCharai);
+        }
         public void SkaiciuotiGyvunus(List<Gyvunas> gyvunuSarasas)
         {
             //List<Gyvunas> GyvunuSarasas = new List <Gyvunas>();
