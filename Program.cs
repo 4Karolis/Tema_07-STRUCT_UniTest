@@ -195,11 +195,88 @@ namespace Tema_07_STRUCT_UniTest
 
             //---------- 3. Metodas gauna int parametra, grazina lyginis = true, nelyginis = flase
 
-            ArLyginis();
+            //ArLyginis();
+
+            //---------- 1. 
+
+            //---------- 2. mokinys2, suvedamtrimestrus, gaunam ju vidurki ir metini pazymi
+
+            List<int> Trimestras1 = new List<int> { 4, 8, 6, 7, 9, 5, 8 };
+            List<int> Trimestras2 = new List<int> { 7, 5, 9, 6, 10, 8 };
+            List<int> Trimestras3 = new List<int> { 8, 6, 9, 5, 8, 7, 8 };
+
+            Mokinys2 mokinys2 = new Mokinys2(Trimestras1, Trimestras2, Trimestras3);
+            //int pirmoTrimestroVidurkis = mokinys2.PirmoTrimestroVidurkis(Trimestras1);
+            //int antroTrimestroVidurkis = mokinys2.AntroTrimestroVidurkis(Trimestras2);
+            //int trecioTrimestroVidurkis = mokinys2.TrecioTrimestroVidurkis(Trimestras3);
+            //mokinys2.MetinisPazymys(pirmoTrimestroVidurkis, antroTrimestroVidurkis, trecioTrimestroVidurkis);
+
+            //----- uzduoties papildymas
+
+            Console.WriteLine("Pasirinkite veiksma:");
+            Console.WriteLine("[1] Perziureti trimestro pazymius | [2] Perziureti trimestru vidurkius ir metini pazymi");
+            int userinput1 = int.Parse(Console.ReadLine());
+
+            switch (userinput1)
+            {
+                case 1:
+                    Console.WriteLine("Pasirinkite, kurio trimestra:");
+                    Console.WriteLine("[1] Pirmas trimestras | [2] Antras trimestras | [3] Trecias trimestras | [4] Visi trys triemstrai");
+                    int userInput2 = int.Parse(Console.ReadLine());
+                    if(userInput2 == 1)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Pirmo trimestro pazymiai");                        
+                        ParodytiTrimestroPazymius(Trimestras1);
+                    }
+                    else if(userInput2 == 2)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Antro trimestro pazymiai");
+                        ParodytiTrimestroPazymius(Trimestras2);
+                    }
+                    else if(userInput2 == 3)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Trecio trimestro pazymiai");
+                        ParodytiTrimestroPazymius(Trimestras3);
+                    }
+                    else if (userInput2 == 4)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("\nPirmo trimestro pazymiai");
+                        ParodytiTrimestroPazymius(Trimestras1);
+                        Console.WriteLine("\nAntro trimestro pazymiai");
+                        ParodytiTrimestroPazymius(Trimestras2);
+                        Console.WriteLine("\nTrecio trimestro pazymiai");
+                        ParodytiTrimestroPazymius(Trimestras3);
+                    }
+                    return;
+                case 2:
+                    int pirmoTrimestroVidurkis = mokinys2.PirmoTrimestroVidurkis(Trimestras1);
+                    int antroTrimestroVidurkis = mokinys2.AntroTrimestroVidurkis(Trimestras2);
+                    int trecioTrimestroVidurkis = mokinys2.TrecioTrimestroVidurkis(Trimestras3);
+                    mokinys2.MetinisPazymys(pirmoTrimestroVidurkis, antroTrimestroVidurkis, trecioTrimestroVidurkis);
+                    return;
+            }
+
+            //--------- 3. Saskaita
+
 
         }
 
         //=============================================================
+        public static void KuriTrimestraParodyt(int userInput)
+        {
+
+        }
+        public static void ParodytiTrimestroPazymius(List<int> pavadinimas)
+        {
+            foreach (var item in pavadinimas)
+            {
+                Console.WriteLine(string.Join(", ", item));
+            }
+        }
         public static void ArLyginis()
         {
             Console.WriteLine("Iveskite skaiciu: ");
