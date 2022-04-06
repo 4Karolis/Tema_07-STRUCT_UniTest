@@ -142,20 +142,20 @@ namespace Tema_07_STRUCT_UniTest
             //RANDOM FILL
             List<Gyvunas> gyvunuSarasas = new List<Gyvunas> {gyvunas1, gyvunas2, gyvunas3, gyvunas4, gyvunas5, gyvunas6, gyvunas7};
 
-            //for (int i = 0; i < 1; i++)// buvo 7
-            //{
-            //    RandomlyFillList(gyvunuSarasas, /*randomNumber,*/ gyvunas1);
-            //    RandomlyFillList(gyvunuSarasas, /*randomNumber,*/ gyvunas2);
-            //    RandomlyFillList(gyvunuSarasas, /*randomNumber,*/ gyvunas3);
-            //    RandomlyFillList(gyvunuSarasas, /*randomNumber,*/ gyvunas4);
-            //    RandomlyFillList(gyvunuSarasas, /*randomNumber,*/ gyvunas5);
-            //    RandomlyFillList(gyvunuSarasas, /*randomNumber,*/ gyvunas6);
-            //    RandomlyFillList(gyvunuSarasas, /*randomNumber,*/ gyvunas7);
-            //}
+            for (int i = 0; i < 5; i++)// buvo 7
+            {
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas1);
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas2);
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas3);
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas4);
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas5);
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas6);
+                RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas7);
+            }
 
-            //PrintOutGyvunaiSarasas(gyvunuSarasas);
-            //int kiekYraGyvunu = gyvunuSarasas.Count;
-            //Console.WriteLine(kiekYraGyvunu);
+            PrintOutGyvunaiSarasas(gyvunuSarasas);
+            int kiekYraGyvunu = gyvunuSarasas.Count;
+            Console.WriteLine(kiekYraGyvunu);
 
             //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas1);
             //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas2);
@@ -165,8 +165,9 @@ namespace Tema_07_STRUCT_UniTest
             //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas6);
             //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas7);
 
-            ZoologijosSodas zoologijos = new ZoologijosSodas("Vilnius Zoo", "Ozo g. 25", gyvunuSarasas);
-            zoologijos.SkaiciuotiGyvunus();
+            //ZoologijosSodas zoologijos = new ZoologijosSodas("Vilnius Zoo", "Ozo g. 25", gyvunuSarasas);
+
+            //zoologijos.SkaiciuotiGyvunus();
 
 
 
@@ -174,12 +175,13 @@ namespace Tema_07_STRUCT_UniTest
             //List<Gyvunas> gyvunas = SkaiciuotiGyvunus(gyvunuSarasas);
 
 
-            RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas1);
+            //RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas1);
             //string skaiciuoti = SkaiciuotiGyvunus();
         }
         //=============================================================
         public void SkaiciuotiGyvunus(List<Gyvunas> gyvunuSarasas)
         {
+            //List<Gyvunas> GyvunuSarasas = new List <Gyvunas>();
             List<string> rusis = new List<string>();
             List<int> count = new List<int>();
 
@@ -204,6 +206,7 @@ namespace Tema_07_STRUCT_UniTest
         {
             randomNumber = GenerateRandomNumber();
             AddRandomGyvunas(randomNumber, GyvunuSarasas, gyvunas);
+            //GyvunuSarasas.Sort();
         }
         public static /*List<Gyvunas>*/ void PrintOutGyvunaiSarasas(List<Gyvunas> GyvunuSarasas)
         {
@@ -216,7 +219,7 @@ namespace Tema_07_STRUCT_UniTest
        
         public static void AddRandomGyvunas(int randomNumber, List<Gyvunas> ListName, Gyvunas gyvunas)
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 15; i++)
             {
                 ListName.Add(gyvunas);
             }
