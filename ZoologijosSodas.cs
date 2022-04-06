@@ -16,9 +16,32 @@ namespace Tema_07_STRUCT_UniTest
             Adresas = adresas;
             GyvunuSarasas = gyvunuSarasas;
         }
-        //Kiek viso gyvunu
-        //Kiek kokios rusies gyvunu yra
-        
+        //Kiek viso gyvunu [+]
+        //Kiek kokios rusies gyvunu yra [-]
+
+        //public void SkaiciuotiGyvunus()
+        //{
+        //    List<string> rusis = new List<string>();
+        //    List<int> count = new List<int>();
+
+        //    for (int i = 0; i < GyvunuSarasas.Count; i++)
+        //    {
+        //        if (rusis.Contains(GyvunuSarasas[i].Rusis))
+        //        {
+        //            count[rusis.IndexOf(GyvunuSarasas[i].Rusis)]++;
+        //        }
+        //        else
+        //        {
+        //            rusis.Add(GyvunuSarasas[i].Rusis);
+        //            count.Add(1);
+        //        }
+        //        for (int j = 0; j < rusis.Count; i++)
+        //        {
+        //            Console.WriteLine($"{rusis[j]} yra {count[j]} vnt.");
+        //        }
+        //    }
+            
+        //}
        
     }
 }
