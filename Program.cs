@@ -129,19 +129,20 @@ namespace Tema_07_STRUCT_UniTest
 
             //----------------------------------------------- 7 UZDUOTIS ---------------------------------------
 
-            //Gyvunas gyvunas1 = new Gyvunas("Oposumas", "Zinduolis");
-            //Gyvunas gyvunas2 = new Gyvunas("Keune", "Zinduolis");
-            //Gyvunas gyvunas3 = new Gyvunas("Pleksne", "Zuvis");
-            //Gyvunas gyvunas4 = new Gyvunas("Peleda", "Paukstis");
-            //Gyvunas gyvunas5 = new Gyvunas("Pingvinas", "Paukstis");
-            //Gyvunas gyvunas6 = new Gyvunas("Zebenkstis", "Zinduolis");
-            //Gyvunas gyvunas7 = new Gyvunas("Krokodilas", "Reptilija");
+            Gyvunas gyvunas1 = new Gyvunas("Oposumas", "Zinduolis");
+            Gyvunas gyvunas2 = new Gyvunas("Keune", "Zinduolis");
+            Gyvunas gyvunas3 = new Gyvunas("Pleksne", "Zuvis");
+            Gyvunas gyvunas4 = new Gyvunas("Peleda", "Paukstis");
+            Gyvunas gyvunas5 = new Gyvunas("Pingvinas", "Paukstis");
+            Gyvunas gyvunas6 = new Gyvunas("Zebenkstis", "Zinduolis");
+            Gyvunas gyvunas7 = new Gyvunas("Krokodilas", "Reptilija");
 
-            //int randomNumber = GenerateRandomNumber();
+            int randomNumber = GenerateRandomNumber();
+
+            //RANDOM FILL
+            List<Gyvunas> gyvunuSarasas = new List<Gyvunas> /*{ gyvunas1, gyvunas2, gyvunas3, gyvunas4, gyvunas5, gyvunas6, gyvunas7 }*/();
 
             ////RANDOM FILL
-            //List<Gyvunas> gyvunuSarasas = new List<Gyvunas> {gyvunas1, gyvunas2, gyvunas3, gyvunas4, gyvunas5, gyvunas6, gyvunas7};
-
             //for (int i = 0; i < 5; i++)// buvo 7
             //{
             //    RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas1);
@@ -152,22 +153,30 @@ namespace Tema_07_STRUCT_UniTest
             //    RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas6);
             //    RandomlyFillList(gyvunuSarasas, randomNumber, gyvunas7);
             //}
+            for (int i = 0; i < 10; i++)
+            {
+                gyvunuSarasas.Add(gyvunas1);
+                gyvunuSarasas.Add(gyvunas3);
+                gyvunuSarasas.Add(gyvunas4);
+            }
 
-            //PrintOutGyvunaiSarasas(gyvunuSarasas);
-            //int kiekYraGyvunu = gyvunuSarasas.Count;
-            //Console.WriteLine(kiekYraGyvunu);
+            PrintOutGyvunaiSarasas(gyvunuSarasas);
+            int kiekYraGyvunu = gyvunuSarasas.Count;
+            Console.WriteLine(kiekYraGyvunu);
+            SkaiciuotiGyvunus2(gyvunuSarasas);
+            Console.WriteLine();
 
-            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas1);
-            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas2);
-            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas3);
-            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas4);
-            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas5);
-            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas6);
-            ////AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas7);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas1);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas2);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas3);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas4);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas5);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas6);
+            //AddRandomGyvunas(randomNumber, gyvunuSarasas, gyvunas7);
 
-            ////ZoologijosSodas zoologijos = new ZoologijosSodas("Vilnius Zoo", "Ozo g. 25", gyvunuSarasas);
+            //ZoologijosSodas zoologijos = new ZoologijosSodas("Vilnius Zoo", "Ozo g. 25", gyvunuSarasas);
 
-            ////zoologijos.SkaiciuotiGyvunus();
+            //zoologijos.SkaiciuotiGyvunus();
 
 
 
@@ -201,64 +210,64 @@ namespace Tema_07_STRUCT_UniTest
 
             //---------- 2. mokinys2, suvedamtrimestrus, gaunam ju vidurki ir metini pazymi
 
-            List<int> Trimestras1 = new List<int> { 4, 8, 6, 7, 9, 5, 8 };
-            List<int> Trimestras2 = new List<int> { 7, 5, 9, 6, 10, 8 };
-            List<int> Trimestras3 = new List<int> { 8, 6, 9, 5, 8, 7, 8 };
+            //List<int> Trimestras1 = new List<int> { 4, 8, 6, 7, 9, 5, 8 };
+            //List<int> Trimestras2 = new List<int> { 7, 5, 9, 6, 10, 8 };
+            //List<int> Trimestras3 = new List<int> { 8, 6, 9, 5, 8, 7, 8 };
 
-            Mokinys2 mokinys2 = new Mokinys2(Trimestras1, Trimestras2, Trimestras3);
-            //int pirmoTrimestroVidurkis = mokinys2.PirmoTrimestroVidurkis(Trimestras1);
-            //int antroTrimestroVidurkis = mokinys2.AntroTrimestroVidurkis(Trimestras2);
-            //int trecioTrimestroVidurkis = mokinys2.TrecioTrimestroVidurkis(Trimestras3);
-            //mokinys2.MetinisPazymys(pirmoTrimestroVidurkis, antroTrimestroVidurkis, trecioTrimestroVidurkis);
+            //Mokinys2 mokinys2 = new Mokinys2(Trimestras1, Trimestras2, Trimestras3);
+            ////int pirmoTrimestroVidurkis = mokinys2.PirmoTrimestroVidurkis(Trimestras1);
+            ////int antroTrimestroVidurkis = mokinys2.AntroTrimestroVidurkis(Trimestras2);
+            ////int trecioTrimestroVidurkis = mokinys2.TrecioTrimestroVidurkis(Trimestras3);
+            ////mokinys2.MetinisPazymys(pirmoTrimestroVidurkis, antroTrimestroVidurkis, trecioTrimestroVidurkis);
 
-            //----- uzduoties papildymas
+            ////----- uzduoties papildymas
 
-            Console.WriteLine("Pasirinkite veiksma:");
-            Console.WriteLine("[1] Perziureti trimestro pazymius | [2] Perziureti trimestru vidurkius ir metini pazymi");
-            int userinput1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Pasirinkite veiksma:");
+            //Console.WriteLine("[1] Perziureti trimestro pazymius | [2] Perziureti trimestru vidurkius ir metini pazymi");
+            //int userinput1 = int.Parse(Console.ReadLine());
 
-            switch (userinput1)
-            {
-                case 1:
-                    Console.WriteLine("Pasirinkite, kurio trimestra:");
-                    Console.WriteLine("[1] Pirmas trimestras | [2] Antras trimestras | [3] Trecias trimestras | [4] Visi trys triemstrai");
-                    int userInput2 = int.Parse(Console.ReadLine());
-                    if(userInput2 == 1)
-                    {
-                        Console.Clear();
-                        Console.WriteLine("Pirmo trimestro pazymiai");                        
-                        ParodytiTrimestroPazymius(Trimestras1);
-                    }
-                    else if(userInput2 == 2)
-                    {
-                        Console.Clear();
-                        Console.WriteLine("Antro trimestro pazymiai");
-                        ParodytiTrimestroPazymius(Trimestras2);
-                    }
-                    else if(userInput2 == 3)
-                    {
-                        Console.Clear();
-                        Console.WriteLine("Trecio trimestro pazymiai");
-                        ParodytiTrimestroPazymius(Trimestras3);
-                    }
-                    else if (userInput2 == 4)
-                    {
-                        Console.Clear();
-                        Console.WriteLine("\nPirmo trimestro pazymiai");
-                        ParodytiTrimestroPazymius(Trimestras1);
-                        Console.WriteLine("\nAntro trimestro pazymiai");
-                        ParodytiTrimestroPazymius(Trimestras2);
-                        Console.WriteLine("\nTrecio trimestro pazymiai");
-                        ParodytiTrimestroPazymius(Trimestras3);
-                    }
-                    return;
-                case 2:
-                    int pirmoTrimestroVidurkis = mokinys2.PirmoTrimestroVidurkis(Trimestras1);
-                    int antroTrimestroVidurkis = mokinys2.AntroTrimestroVidurkis(Trimestras2);
-                    int trecioTrimestroVidurkis = mokinys2.TrecioTrimestroVidurkis(Trimestras3);
-                    mokinys2.MetinisPazymys(pirmoTrimestroVidurkis, antroTrimestroVidurkis, trecioTrimestroVidurkis);
-                    return;
-            }
+            //switch (userinput1)
+            //{
+            //    case 1:
+            //        Console.WriteLine("Pasirinkite, kurio trimestra:");
+            //        Console.WriteLine("[1] Pirmas trimestras | [2] Antras trimestras | [3] Trecias trimestras | [4] Visi trys triemstrai");
+            //        int userInput2 = int.Parse(Console.ReadLine());
+            //        if(userInput2 == 1)
+            //        {
+            //            Console.Clear();
+            //            Console.WriteLine("Pirmo trimestro pazymiai");                        
+            //            ParodytiTrimestroPazymius(Trimestras1);
+            //        }
+            //        else if(userInput2 == 2)
+            //        {
+            //            Console.Clear();
+            //            Console.WriteLine("Antro trimestro pazymiai");
+            //            ParodytiTrimestroPazymius(Trimestras2);
+            //        }
+            //        else if(userInput2 == 3)
+            //        {
+            //            Console.Clear();
+            //            Console.WriteLine("Trecio trimestro pazymiai");
+            //            ParodytiTrimestroPazymius(Trimestras3);
+            //        }
+            //        else if (userInput2 == 4)
+            //        {
+            //            Console.Clear();
+            //            Console.WriteLine("\nPirmo trimestro pazymiai");
+            //            ParodytiTrimestroPazymius(Trimestras1);
+            //            Console.WriteLine("\nAntro trimestro pazymiai");
+            //            ParodytiTrimestroPazymius(Trimestras2);
+            //            Console.WriteLine("\nTrecio trimestro pazymiai");
+            //            ParodytiTrimestroPazymius(Trimestras3);
+            //        }
+            //        return;
+            //    case 2:
+            //        int pirmoTrimestroVidurkis = mokinys2.PirmoTrimestroVidurkis(Trimestras1);
+            //        int antroTrimestroVidurkis = mokinys2.AntroTrimestroVidurkis(Trimestras2);
+            //        int trecioTrimestroVidurkis = mokinys2.TrecioTrimestroVidurkis(Trimestras3);
+            //        mokinys2.MetinisPazymys(pirmoTrimestroVidurkis, antroTrimestroVidurkis, trecioTrimestroVidurkis);
+            //        return;
+            //}
 
             //--------- 3. Saskaita
 
@@ -299,12 +308,12 @@ namespace Tema_07_STRUCT_UniTest
             Array.Reverse(stringoCharai);
             return new string(stringoCharai);
         }
-        public void SkaiciuotiGyvunus(List<Gyvunas> gyvunuSarasas)
+        public static void SkaiciuotiGyvunus(List<Gyvunas> gyvunuSarasas)
         {
             //List<Gyvunas> GyvunuSarasas = new List <Gyvunas>();
             List<string> rusis = new List<string>();
             List<int> count = new List<int>();
-
+            
             for (int i = 0; i < gyvunuSarasas.Count; i++)
             {
                 if (rusis.Contains(gyvunuSarasas[i].Rusis))
@@ -321,6 +330,31 @@ namespace Tema_07_STRUCT_UniTest
                     Console.WriteLine($"{rusis[j]} yra {count[j]} vnt.");
                 }
             }
+
+        }
+        public static void SkaiciuotiGyvunus2(List<Gyvunas> gyvunuSarasas)
+        {
+            //List<Gyvunas> GyvunuSarasas = new List <Gyvunas>();
+            List<string> rusis = new List<string>();
+            List<int> count = new List<int>();
+
+            for (int i = 0; i < gyvunuSarasas.Count; i++)
+            {
+                if (rusis.Contains(gyvunuSarasas[i].Rusis))
+                {
+                    count[rusis.IndexOf(gyvunuSarasas[i].Rusis)]++;
+                }
+                else
+                {
+                    rusis.Add(gyvunuSarasas[i].Rusis);
+                    count.Add(1);
+                }
+                //for (int j = 0; j < rusis.Count; i++)
+                //{
+                //    Console.WriteLine($"{rusis[j]} yra {count[j]} vnt.");
+                //}
+            }
+
         }
         public static void RandomlyFillList(List<Gyvunas> GyvunuSarasas, int randomNumber, Gyvunas gyvunas)
         {
